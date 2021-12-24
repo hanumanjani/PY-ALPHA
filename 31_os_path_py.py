@@ -1,0 +1,11 @@
+import os
+d = os.path.join('a','b','c')
+print(d)
+print(os.name)
+print(os.error)
+p = os.path.join(os.getcwd(),'myfile.txt')
+print(p)
+print(os.path.join(os .getcwd(), 'Block_indentation.py'))
+print(os.path.dirname(p))
+print(os.path.split(os.getcwd()))
+print(os.path.basename(p))

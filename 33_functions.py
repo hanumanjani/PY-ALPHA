@@ -44,9 +44,17 @@ def cursing(depth):
  except RuntimeError as RE:
     print('I recursed {} times!'.format(depth))
 cursing(0)
-print(225/856*100)
 
+# # MAP FUNCTION ----------------------------->
+#
+# name_lenths = map(len, ["marry", "harry", "hello world"])
+# print(name_lenths,1)
 
+# REDUCE FUNCTION
+# total = reduce(lambda  a, x : a+x, [0,1,2,3,4])
+# print(total)
 
+arr = [1, 2,3,4,5,6,7]
+print([i for i in filter(lambda x:x>4,arr)])
 
 

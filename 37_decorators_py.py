@@ -57,3 +57,23 @@ print(multiply(3,5))
 #
 # testfn()
 
+
+# DECORATOR BY HARRY
+
+# def funcret(num):
+#     if num == 0:
+#         return print
+#     elif num == 1:
+#         return sum
+#     return
+
+
+
+
+def func1(func2):
+    print("hanumanarM jani bakasar burkiya jodhpur rajasthhan hanumanaram @ lalaram jkanut")
+    return
+@func1
+def func3():
+    return 0
+func3()

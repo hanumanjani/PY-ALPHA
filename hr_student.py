@@ -11,6 +11,7 @@ class Student1:
         self.name =name
         self.rollno = f"420{department}{str(rollno)}"
         self.department = department
+        self.special = "special"
     @classmethod
     def batchchange(cls,year):
         batch = year
@@ -23,12 +24,18 @@ class Student1:
         print(self.department)
         print(self.rollno)
 
+
 class Student2(Student1):
     batch = 2021
     def __init__(self,name,rollno,department):
+        # super.__init__()
         self.name =name
         self.rollno = f"421{department}{str(rollno)}"
         self.department = department
+    # MAPING OPERATOR TO FUNCTION
+    def __add__(self, other):
+        return "good night"
+
 
 rohan = Student2("Rohan",4542,"CY")
 rohan.print_info()
@@ -36,7 +43,9 @@ rohan.print_info()
 # print(rohan.__doc__)             -----------------> NONE
 
 
-hari = Student1("HARI",5643,"CY")
+hari = Student2("HARI",5643,"CY")
 hari.print_info()
 l = hari.__doc__
 print(l)
+
+print(rohan+hari)
